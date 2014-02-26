@@ -4,11 +4,8 @@ DesignerNews-App
 Android App for Designer News ( https://news.layervault.com )
 
 
-/**
- *
- * Details will be added soon here...
- *
- **/
+//Details will be added soon here...
+
 
 
 
