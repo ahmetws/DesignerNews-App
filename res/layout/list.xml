@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fontawesometext="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llList"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/tvNewsTitleTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="6dp"
+        android:layout_weight="1"
+        android:textColor="@color/title"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.beardedhen.androidbootstrap.FontAwesomeText
+            android:id="@+id/icComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/tvNewsCountTop"
+            android:textColor="@color/link_gri"
+            android:textSize="14sp"
+            fontawesometext:fa_icon="fa-comments-o" />
+
+        <TextView
+            android:id="@+id/tvNewsCountTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/link_dark_gri"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <com.beardedhen.androidbootstrap.FontAwesomeText
+            android:id="@+id/icVote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/link_gri"
+            android:textSize="14sp"
+            fontawesometext:fa_icon="fa-thumbs-o-up" />
+
+        <TextView
+            android:id="@+id/tvNewsVote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/tvNewsAuthorTop"
+            android:layout_toRightOf="@+id/icVote"
+            android:gravity="center"
+            android:textColor="@color/link_gri"
+            android:textSize="14sp" />
+
+        <com.beardedhen.androidbootstrap.FontAwesomeText
+            android:id="@+id/icUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/tvNewsVote"
+            android:textColor="@color/link_gri"
+            android:textSize="14sp"
+            fontawesometext:fa_icon="fa-user" />
+
+        <TextView
+            android:id="@+id/tvNewsAuthorTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/icUser"
+            android:textColor="@color/link_gri"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>
